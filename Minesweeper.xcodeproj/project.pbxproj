@@ -14,6 +14,7 @@
 		53CCD90F202B62BB004CC21F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53CCD90E202B62BB004CC21F /* Assets.xcassets */; };
 		53CCD912202B62BB004CC21F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CCD910202B62BB004CC21F /* LaunchScreen.storyboard */; };
 		53CCD915202B62BB004CC21F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CCD914202B62BB004CC21F /* main.m */; };
+		53CCD91D20389CC6004CC21F /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CCD91C20389CC6004CC21F /* Cell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		53CCD911202B62BB004CC21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53CCD913202B62BB004CC21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53CCD914202B62BB004CC21F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53CCD91B20389CC6004CC21F /* Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		53CCD91C20389CC6004CC21F /* Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				53CCD903202B62BB004CC21F /* AppDelegate.m */,
 				53CCD905202B62BB004CC21F /* ViewController.h */,
 				53CCD906202B62BB004CC21F /* ViewController.m */,
+				53CCD91B20389CC6004CC21F /* Cell.h */,
+				53CCD91C20389CC6004CC21F /* Cell.m */,
 				53CCD908202B62BB004CC21F /* Main.storyboard */,
 				53CCD90E202B62BB004CC21F /* Assets.xcassets */,
 				53CCD910202B62BB004CC21F /* LaunchScreen.storyboard */,
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CCD91D20389CC6004CC21F /* Cell.m in Sources */,
 				53CCD90D202B62BB004CC21F /* Minesweeper.xcdatamodeld in Sources */,
 				53CCD907202B62BB004CC21F /* ViewController.m in Sources */,
 				53CCD915202B62BB004CC21F /* main.m in Sources */,
