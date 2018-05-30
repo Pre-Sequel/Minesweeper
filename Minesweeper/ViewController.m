@@ -410,37 +410,36 @@ for (Cell *emptycell in emptyCellsGroup) {
         [self drawСell:c];}
 }
 
-
-//cell.used = YES;
-//[_arrayOfOpeningCells addObject:cell];
-
 - (void) perebor5: (NSMutableArray *) _arrayOfProcessedCells {
-    
     for (Cell *emptycell in _Cells) { //для всех пустых ячеек на поле
-    for (Cell *c in _arrayOfProcessedCells) {
-        if (c.cellType == 0) {
-            //проверка есть ли вокруг нажатой пустой ячейки другие пустые
-            //если ячейка справа пустая
-            if (emptycell.cellType == 0) {
-            if (((emptycell.coordinates.x == c.coordinates.x-1) && (emptycell.coordinates.y == c.coordinates.y)) ||
-                //если ячейка сверху слв пустая
-                ((emptycell.coordinates.x == c.coordinates.x+1) && (emptycell.coordinates.y == c.coordinates.y+1)) ||
-                //если ячейка сверху пустая
-                ((emptycell.coordinates.x == c.coordinates.x) && (emptycell.coordinates.y == c.coordinates.y+1)) ||
-                //если ячейка сверху спр пустая
-                ((emptycell.coordinates.x == c.coordinates.x-1) && (emptycell.coordinates.y == c.coordinates.y+1)) ||
-                //если ячейка слева пустая
-                ((emptycell.coordinates.x == c.coordinates.x+1) && (emptycell.coordinates.y == c.coordinates.y)) ||
-                //если ячейка снизу слева пустая
-                ((emptycell.coordinates.x == c.coordinates.x+1) && (emptycell.coordinates.y == c.coordinates.y-1)) ||
-                //если ячейка снизу пустая
-                ((emptycell.coordinates.x == c.coordinates.x) && (emptycell.coordinates.y == c.coordinates.y-1)) ||
-                //если ячейка снизу справа пустая
-                ((emptycell.coordinates.x == c.coordinates.x-1) && (emptycell.coordinates.y == c.coordinates.y-1))) {
-                c.used = YES;
-                [_arrayOfProcessedCells addObject:emptycell];
-                
-        }}}}}}
+        for (Cell *c in _arrayOfProcessedCells) {
+            if (c.cellType == 0) {
+                //проверка есть ли вокруг нажатой пустой ячейки другие пустые
+                //если ячейка справа пустая
+                if (emptycell.cellType == 0) {
+                    if (((emptycell.coordinates.x == c.coordinates.x-1) && (emptycell.coordinates.y == c.coordinates.y)) ||
+                        //если ячейка сверху слв пустая
+                        ((emptycell.coordinates.x == c.coordinates.x+1) && (emptycell.coordinates.y == c.coordinates.y+1)) ||
+                        //если ячейка сверху пустая
+                        ((emptycell.coordinates.x == c.coordinates.x) && (emptycell.coordinates.y == c.coordinates.y+1)) ||
+                        //если ячейка сверху спр пустая
+                        ((emptycell.coordinates.x == c.coordinates.x-1) && (emptycell.coordinates.y == c.coordinates.y+1)) ||
+                        //если ячейка слева пустая
+                        ((emptycell.coordinates.x == c.coordinates.x+1) && (emptycell.coordinates.y == c.coordinates.y)) ||
+                        //если ячейка снизу слева пустая
+                        ((emptycell.coordinates.x == c.coordinates.x+1) && (emptycell.coordinates.y == c.coordinates.y-1)) ||
+                        //если ячейка снизу пустая
+                        ((emptycell.coordinates.x == c.coordinates.x) && (emptycell.coordinates.y == c.coordinates.y-1)) ||
+                        //если ячейка снизу справа пустая
+                        ((emptycell.coordinates.x == c.coordinates.x-1) && (emptycell.coordinates.y == c.coordinates.y-1))) {
+                        c.used = YES;
+                        [_arrayOfProcessedCells addObject:emptycell];
+                    }
+                }
+            }
+        }
+    }
+}
 
 - (void) perebor6: (NSMutableArray *) _arrayOfProcessedCells {
     
