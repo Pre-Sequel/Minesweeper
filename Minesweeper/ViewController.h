@@ -28,7 +28,7 @@ NSMutableArray *arrayObrabotannie;
 @property (nonatomic, strong) NSMutableArray *emptyCellsGroup;
 @property (nonatomic, strong) NSMutableArray *arrayOfNeighboringCells;
 @property (nonatomic, strong) NSMutableArray *arrayObrabotannie;
-@property (nonatomic,assign) BOOL Flag;
+@property (nonatomic, assign) BOOL Flag;
 
 
 //прописываем константы
