@@ -411,12 +411,7 @@
         [self drawСell:c];}
 }
 
-
-//cell.used = YES;
-//[_arrayOfOpeningCells addObject:cell];
-
 - (void) perebor5: (NSMutableArray *) _arrayOfProcessedCells {
-    
     for (Cell *emptycell in _Cells) { //для всех пустых ячеек на поле
         for (Cell *c in _arrayOfProcessedCells) {
             if (c.cellType == 0) {
@@ -440,8 +435,12 @@
                         ((emptycell.coordinates.x == c.coordinates.x-1) && (emptycell.coordinates.y == c.coordinates.y-1))) {
                         c.used = YES;
                         [_arrayOfProcessedCells addObject:emptycell];
-                        
-                    }}}}}}
+                    }
+                }
+            }
+        }
+    }
+}
 
 - (void) perebor6: (NSMutableArray *) _arrayOfProcessedCells {
     
