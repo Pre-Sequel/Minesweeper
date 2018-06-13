@@ -1,7 +1,7 @@
 
 #import "ViewController.h"
 #import "Cell.h"
-
+#import "ProgrammLogic.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *gameArea;
@@ -508,6 +508,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    GameAreaView *gameArea = [[GameAreaView alloc] initWithSize:40];
+//    [self.view addSubview:gameArea];
+    
+    
     [self initGameField];
     [self initialMines];
 }

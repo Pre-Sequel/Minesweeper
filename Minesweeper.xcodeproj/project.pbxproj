@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5354DFF020C2E7BC0029BE4B /* ProgrammLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354DFEF20C2E7BC0029BE4B /* ProgrammLogic.m */; };
+		5354DFF320D188690029BE4B /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 5354DFF220D188690029BE4B /* View.m */; };
 		53CCD904202B62BB004CC21F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CCD903202B62BB004CC21F /* AppDelegate.m */; };
 		53CCD907202B62BB004CC21F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CCD906202B62BB004CC21F /* ViewController.m */; };
 		53CCD90A202B62BB004CC21F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CCD908202B62BB004CC21F /* Main.storyboard */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5354DFEE20C2E7BC0029BE4B /* ProgrammLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgrammLogic.h; sourceTree = "<group>"; };
+		5354DFEF20C2E7BC0029BE4B /* ProgrammLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgrammLogic.m; sourceTree = "<group>"; };
+		5354DFF120D188690029BE4B /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		5354DFF220D188690029BE4B /* View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
 		53CCD8FF202B62BB004CC21F /* Minesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CCD902202B62BB004CC21F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53CCD903202B62BB004CC21F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,7 +72,11 @@
 				53CCD902202B62BB004CC21F /* AppDelegate.h */,
 				53CCD903202B62BB004CC21F /* AppDelegate.m */,
 				53CCD905202B62BB004CC21F /* ViewController.h */,
+				5354DFF120D188690029BE4B /* View.h */,
+				5354DFF220D188690029BE4B /* View.m */,
 				53CCD906202B62BB004CC21F /* ViewController.m */,
+				5354DFEE20C2E7BC0029BE4B /* ProgrammLogic.h */,
+				5354DFEF20C2E7BC0029BE4B /* ProgrammLogic.m */,
 				53CCD91B20389CC6004CC21F /* Cell.h */,
 				53CCD91C20389CC6004CC21F /* Cell.m */,
 				53CCD908202B62BB004CC21F /* Main.storyboard */,
@@ -150,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5354DFF320D188690029BE4B /* View.m in Sources */,
 				53CCD91D20389CC6004CC21F /* Cell.m in Sources */,
+				5354DFF020C2E7BC0029BE4B /* ProgrammLogic.m in Sources */,
 				53CCD90D202B62BB004CC21F /* Minesweeper.xcdatamodeld in Sources */,
 				53CCD907202B62BB004CC21F /* ViewController.m in Sources */,
 				53CCD915202B62BB004CC21F /* main.m in Sources */,
